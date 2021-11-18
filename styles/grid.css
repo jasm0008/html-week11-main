@@ -78,5 +78,14 @@ div{
 	grid-template-rows: 120px 120px;
 
 	/* use gap to set space between the grid - or row-gap / column-gap to set them individually*/
-	gap:2em 1em /* if you set two values in gap, its the row-gap then the column-gap */
+	gap:2em 1em; /* if you set two values in gap, its the row-gap then the column-gap */
+
+}
+
+.grid2{
+	margin-top: 50px;
+	display: grid;
+
+	grid-template-columns: 1fr 1fr 1fr; /* repeat(3, 1fr) */
+	grid-auto-rows: 120px; /* this will define all rows as a certain value, including implicit or automatically created rows */
 }
